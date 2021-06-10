@@ -19,20 +19,7 @@ hours_left = alarm_hour-current_hour
 
 current_minute = abs(int(now.strftime("%M")))
 minutes_left = alarm_minute-current_minute
-
-print(hours_left)
-print(minutes_left)
-
 seconds_left = (hours_left*60*60)+(minutes_left*60)
-print(seconds_left)
 time.sleep(seconds_left)
 print("WAKE UPPPP!!")
-"""
-time_left = alarm_time-current_time
-print(time_left)
-
-current_time = now.strftime("%H:%M:%S")
-
-print("Current Time =", current_time)
-"""
 
