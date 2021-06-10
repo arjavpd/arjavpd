@@ -14,12 +14,12 @@ while counter == 0:
 
 now = datetime.now()
 
-current_hour = abs(int(now.strftime("%H")))
-hours_left = alarm_hour-current_hour
+current_hour = int(now.strftime("%H"))
+hours_left = abs(alarm_hour-current_hour)
 
-current_minute = abs(int(now.strftime("%M")))
-minutes_left = alarm_minute-current_minute
+current_minute = int(now.strftime("%M"))
+minutes_left = abs(alarm_minute-current_minute)
+
 seconds_left = (hours_left*60*60)+(minutes_left*60)
 time.sleep(seconds_left)
 print("WAKE UPPPP!!")
-
